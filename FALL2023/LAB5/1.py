@@ -1,4 +1,4 @@
-class Teacher:
+class Teacher:     #THERE IS A MISTAKE IN THIS CODE [NO ENCAPSULATION IS USED] BUT I AM TOO BORED TO FIX IT
     def __init__(self,name,dpt):
         self.name=name
         self.dpt=dpt

@@ -6,7 +6,7 @@ class Spaceship:
         self.cargo=[]
         self.carryweight=0
     def load_cargo(self,cargo):
-        if not cargo.getweight() > self.capacity:
+        if not cargo.getweight() > self.tempcapa:
             self.cargo.append(cargo.getname())
             self.tempcapa-=cargo.getweight()
             self.carryweight+=cargo.getweight()

@@ -16,7 +16,7 @@ class Student:
 
     @classmethod
     def printDetails(cls):
-        print(f"Total Student(s): {Student.total}\nBRAC University Student(s): {Student.brac}\nOther Institution Student(s): {Student.other}")
+        print(f"Total Student(s): {cls.total}\nBRAC University Student(s): {cls.brac}\nOther Institution Student(s): {cls.other}")
     @classmethod
     def createStudent(cls,name,dpt,uni="BRAC University"):
         obj = cls(name,dpt,uni)         

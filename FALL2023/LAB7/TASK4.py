@@ -12,21 +12,28 @@ class Fruit:
 class Mango(Fruit):
     def __init__(self):
         super().__init__(formalin=True,name="Mango")
-        # print('Mangos are bad for you')
+    
+    def __str__(self):
+        return 'Mangos are bad for you'
 
+    
 class Jackfruit(Fruit):    
     def __init__(self):
         super().__init__(formalin=False,name="Jackfruit")
-        #print('Jackfruits are good for you')
+       
+
+    def __str__(self):
+        return 'Jackfruits are good for you'
+
 class testFruit:
     def test(self, f):
         print('----Printing Detail----')
         if f.hasFormalin():
             print('Do not eat the',f.getName(),'.')
-            print(f) #could be a error here in the question
+            print(f) 
         else:
             print('Eat the',f.getName(),'.')
-            print(f)  #could be a error here in the question
+            print(f)  
         
 m = Mango()
 j = Jackfruit()

@@ -1,10 +1,7 @@
 class Shape:
 
   def __init__(self, name='Default', height=0, base=0):
-    self.area = 0
-    self.name = name
-    self.height = height
-    self.base = base
+    self.area, self.name, self.height, self.base  = 0 , name, height, base
 
   def get_height_base(self):
     return "Height: "+str(self.height)+",Base: "+str(self.base)

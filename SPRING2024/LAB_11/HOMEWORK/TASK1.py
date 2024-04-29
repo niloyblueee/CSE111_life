@@ -33,8 +33,8 @@ class Part_time_employee(Employee): #beta2
     def __init__(self,name,id,dpt):
         super().__init__(name,id,dpt)
         self.type="Part Time"
-    def increment(self):
         super().set_salary(15000)
+    def increment(self):
         print('Sadly, there is no increment for the part time employees')
 
 print("1------------------------------------------")

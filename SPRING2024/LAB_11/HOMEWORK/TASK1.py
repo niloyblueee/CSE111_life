@@ -29,10 +29,6 @@ class Foreign_employee(Employee): #beta1
         super().set_salary(30000)
         self.salary+= self.salary*.15
 
-    #def employeeDetails(self): 
-    #    print(f'Name: {self.name}, Dept {self.dpt}\nEmployee id: {self.id}, Salary: {self.salary}\n Employee Type: {self.type}')
-        
-
 class Part_time_employee(Employee): #beta2
     def __init__(self,name,id,dpt):
         super().__init__(name,id,dpt)
